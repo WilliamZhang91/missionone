@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, html{
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+footer {
+    display: flex;
+    height: 180px;
+}
+
+.k {
+    flex: 60%;
+    text-align: center;
+}
+
+.l {
+    flex: 40%;
+    text-align: right;
+    margin: 20px 150px 0 0;
+}
+
+label {
+    padding: 20px 20px;
+}
+
+form {
+    margin: 0 0 0 100px;
+}
+
+h1, p {
+    font-size: 40px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
+}
+
+
+nav {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 26, 255, 0.041);
+    background-color: hsla(209, 92%, 58%, 0.992);
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+
+section {
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+    height: 600px;
+    padding: 200px 0 0 0;
+}
+
+.left {
+    flex: 20%;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    padding: 40px 20px;
+}
+
+.left a {
+    color: white;
+    text-decoration: none;  
+}
+
+.left a:hover {
+    color: grey;
+}
+
+.right {
+    flex: 20%;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    margin: 10px 0px;
+    
+}
+
+.right a {
+    color: white;
+    margin: 0px 10px;
+}
+
+.center {
+    flex: 60%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.center a {
+    padding: 40px 40px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.center a:hover {
+    color: white;
+}
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin: 0 0 5px 0;
+  }
+
+  input[type=email] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px
+  }
+
+input[type=submit] {
+    background-color:green;
+    color: white;
+    padding: 12px 20px 12px 20px;
+    margin: 12px 0 0 0;
+    border: gray solid 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+@keyframes example {
+    from {color: green;}
+    to {color: blue;}
+}
+
+#pic {
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#logo {
+    flex: 50%;
+    flex-wrap: wrap;
+    margin: 0 0 0 150px;
+    padding: 0 150 0 0;
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    nav, footer {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
